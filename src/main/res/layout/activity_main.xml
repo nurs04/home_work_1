@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B2B38"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/loyOut"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="180dp"
+            android:text="𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦"
+            android:textColor="@color/white"
+            android:textSize="@android:dimen/app_icon_size"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut"
+            app:layout_constraintTop_toTopOf="@id/loyOut" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="315dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
+            android:hint=" UserName"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut"
+            app:layout_constraintTop_toBottomOf="@+id/appName" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="315dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_edit_text"
+            android:hint=" Password"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="315dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#3897f0"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut"
+            app:layout_constraintTop_toBottomOf="@id/password" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="7dp"
+            android:autoLink="all"
+            android:linksClickable="true"
+            android:text="forgot your login details?"
+            android:textColor="@color/design_default_color_background"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut"
+            app:layout_constraintTop_toTopOf="@id/login"
+
+            />
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Sign Up"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-460dp"
+            android:src="@drawable/inst_log"
+            app:layout_constraintEnd_toEndOf="@id/loyOut"
+            app:layout_constraintStart_toStartOf="@id/loyOut" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
